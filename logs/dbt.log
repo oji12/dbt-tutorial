@@ -1,0 +1,714 @@
+
+
+============================== 2023-03-14 03:39:44.544533 | 4c9211eb-53fd-4f26-a0af-9bec02cfd045 ==============================
+[0m03:39:44.544533 [info ] [MainThread]: Running with dbt=1.4.5
+[0m03:39:44.545754 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m03:39:44.545875 [debug] [MainThread]: Tracking: tracking
+[0m03:39:44.581646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111dab790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11206b210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11206b990>]}
+[0m03:39:44.904459 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`.Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:39:44.904759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4c9211eb-53fd-4f26-a0af-9bec02cfd045', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b39810>]}
+[0m03:39:44.905072 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`.Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:39:44.905233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4c9211eb-53fd-4f26-a0af-9bec02cfd045', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112bb4150>]}
+[0m03:39:44.913576 [debug] [MainThread]: Executing "git --help"
+[0m03:39:44.963361 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:39:44.963983 [debug] [MainThread]: STDERR: "b''"
+[0m03:39:44.973686 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m03:39:44.974276 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:39:44.976752 [debug] [MainThread]: On debug: select 1 as id
+[0m03:39:46.879435 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:2a1fdca4-ad41-482b-b288-536c2764aa2d&page=queryresults
+[0m03:39:46.887740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a61310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df16d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df3510>]}
+[0m03:39:46.889818 [debug] [MainThread]: Flushing usage events
+[0m03:39:47.800439 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-14 04:06:02.047781 | 2d704657-ab2e-46bb-ba2d-d6a76c32cfd6 ==============================
+[0m04:06:02.047781 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:06:02.049050 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m04:06:02.049169 [debug] [MainThread]: Tracking: tracking
+[0m04:06:02.084993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8f1290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d904090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df39050>]}
+[0m04:06:02.362574 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`.Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m04:06:02.362868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2d704657-ab2e-46bb-ba2d-d6a76c32cfd6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea71f90>]}
+[0m04:06:02.363181 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`.Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m04:06:02.363349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2d704657-ab2e-46bb-ba2d-d6a76c32cfd6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9e4b50>]}
+[0m04:06:02.371491 [debug] [MainThread]: Executing "git --help"
+[0m04:06:02.425902 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:06:02.426720 [debug] [MainThread]: STDERR: "b''"
+[0m04:06:02.437064 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m04:06:02.437733 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:06:02.440216 [debug] [MainThread]: On debug: select 1 as id
+[0m04:06:04.601150 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:79831234-b641-425e-80f7-42fbc9068e12&page=queryresults
+[0m04:06:04.602587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1e6cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eca3bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eca3210>]}
+[0m04:06:04.603336 [debug] [MainThread]: Flushing usage events
+[0m04:06:05.517205 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-14 04:20:37.040260 | 6fa1d97e-031f-43a4-9180-03fe0cb72d8d ==============================
+[0m04:20:37.040260 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:20:37.041623 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m04:20:37.041767 [debug] [MainThread]: Tracking: tracking
+[0m04:20:37.088072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11188f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111883c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c2f410>]}
+[0m04:20:37.422390 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`.Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m04:20:37.422692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6fa1d97e-031f-43a4-9180-03fe0cb72d8d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112767f90>]}
+[0m04:20:37.423005 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`.Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m04:20:37.423180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6fa1d97e-031f-43a4-9180-03fe0cb72d8d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11272fc10>]}
+[0m04:20:37.431505 [debug] [MainThread]: Executing "git --help"
+[0m04:20:37.481570 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:20:37.482414 [debug] [MainThread]: STDERR: "b''"
+[0m04:20:37.493127 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m04:20:37.493790 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:20:37.496491 [debug] [MainThread]: On debug: select 1 as id
+[0m04:20:39.270796 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:0628551d-a5be-4c01-be21-39f8a4b62c56&page=queryresults
+[0m04:20:39.272209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126d02d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126bded0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11188f7d0>]}
+[0m04:20:39.273010 [debug] [MainThread]: Flushing usage events
+[0m04:20:40.150886 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-14 04:57:39.647873 | c1c06c9f-da54-459c-ad0d-27b5465f3378 ==============================
+[0m04:57:39.647873 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:57:39.648598 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m04:57:39.648767 [debug] [MainThread]: Tracking: tracking
+[0m04:57:39.685551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132ced50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132ac110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132cff50>]}
+[0m04:57:39.695375 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:57:39.696164 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m04:57:39.696398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c1c06c9f-da54-459c-ad0d-27b5465f3378', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132b8890>]}
+[0m04:57:40.156058 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m04:57:40.159582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1c06c9f-da54-459c-ad0d-27b5465f3378', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112fc65d0>]}
+[0m04:57:40.164923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1c06c9f-da54-459c-ad0d-27b5465f3378', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132aef90>]}
+[0m04:57:40.165186 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m04:57:40.165439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1c06c9f-da54-459c-ad0d-27b5465f3378', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132acbd0>]}
+[0m04:57:40.166213 [info ] [MainThread]: 
+[0m04:57:40.166496 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m04:57:40.166719 [debug] [MainThread]: Command end result
+[0m04:57:40.170288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11330f390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11330eed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11330fc10>]}
+[0m04:57:40.170475 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 04:58:46.048580 | e4df90a3-204b-4d87-8d24-fb67aab0dad8 ==============================
+[0m04:58:46.048580 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:58:46.049968 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m04:58:46.050303 [debug] [MainThread]: Tracking: tracking
+[0m04:58:46.093679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11203d050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111786490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112547f90>]}
+[0m04:58:46.103983 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:58:46.141676 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m04:58:46.142060 [debug] [MainThread]: Partial parsing: added file: jaffle_shop://models/customers.sql
+[0m04:58:46.213958 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+[0m04:58:46.225598 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m04:58:46.228938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e4df90a3-204b-4d87-8d24-fb67aab0dad8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112540890>]}
+[0m04:58:46.235125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e4df90a3-204b-4d87-8d24-fb67aab0dad8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124ba490>]}
+[0m04:58:46.235408 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m04:58:46.235583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e4df90a3-204b-4d87-8d24-fb67aab0dad8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110082910>]}
+[0m04:58:46.236469 [info ] [MainThread]: 
+[0m04:58:46.237768 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:58:46.238459 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508'
+[0m04:58:46.238655 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:58:47.363773 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508_jaffle_shop'
+[0m04:58:47.364635 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:58:48.277399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e4df90a3-204b-4d87-8d24-fb67aab0dad8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112540890>]}
+[0m04:58:48.278966 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m04:58:48.279386 [info ] [MainThread]: 
+[0m04:58:48.282762 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m04:58:48.283013 [info ] [Thread-1 (]: 1 of 1 START sql view model jaffle_shop.customers .............................. [RUN]
+[0m04:58:48.283430 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.jaffle_shop.customers'
+[0m04:58:48.283567 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m04:58:48.284778 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m04:58:48.285194 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (compile): 2023-03-14 04:58:48.283657 => 2023-03-14 04:58:48.285121
+[0m04:58:48.285337 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m04:58:48.309677 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m04:58:48.310157 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:58:48.311399 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+
+  create or replace view `main-duality-380508`.`jaffle_shop`.`customers`
+  OPTIONS()
+  as /models/customers.sql
+
+with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from sample_dbt.raw_customers
+),
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from sample_dbt.raw_orders
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final;
+
+
+[0m04:58:48.959699 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected "(" or keyword SELECT or keyword WITH but got "/" at [6:6]')
+[0m04:58:49.398136 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:94acbce7-b7cf-46f1-8f07-33159a2ffbdc&page=queryresults
+[0m04:58:49.399168 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (execute): 2023-03-14 04:58:48.285424 => 2023-03-14 04:58:49.399055
+[0m04:58:49.418086 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  Syntax error: Expected "(" or keyword SELECT or keyword WITH but got "/" at [6:6]
+  compiled Code at target/run/jaffle_shop/models/customers.sql
+[0m04:58:49.418473 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e4df90a3-204b-4d87-8d24-fb67aab0dad8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1122bb390>]}
+[0m04:58:49.418802 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model jaffle_shop.customers ..................... [[31mERROR[0m in 1.14s]
+[0m04:58:49.419976 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m04:58:49.421111 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:58:49.421413 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:58:49.421516 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m04:58:49.421629 [info ] [MainThread]: 
+[0m04:58:49.421812 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.18 seconds (3.18s).
+[0m04:58:49.422019 [debug] [MainThread]: Command end result
+[0m04:58:49.425992 [info ] [MainThread]: 
+[0m04:58:49.426204 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m04:58:49.426345 [info ] [MainThread]: 
+[0m04:58:49.426481 [error] [MainThread]: [33mDatabase Error in model customers (models/customers.sql)[0m
+[0m04:58:49.426611 [error] [MainThread]:   Syntax error: Expected "(" or keyword SELECT or keyword WITH but got "/" at [6:6]
+[0m04:58:49.426728 [error] [MainThread]:   compiled Code at target/run/jaffle_shop/models/customers.sql
+[0m04:58:49.426846 [info ] [MainThread]: 
+[0m04:58:49.426980 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m04:58:49.427205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1125c7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112579090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11225e9d0>]}
+[0m04:58:49.427353 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 04:59:30.291934 | adbd232a-a797-4c63-94ba-85cc861ae86a ==============================
+[0m04:59:30.291934 [info ] [MainThread]: Running with dbt=1.4.5
+[0m04:59:30.292899 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m04:59:30.293262 [debug] [MainThread]: Tracking: tracking
+[0m04:59:30.326627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111ced90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111cf790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111cff10>]}
+[0m04:59:30.337194 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m04:59:30.368943 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:59:30.369145 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:59:30.369727 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m04:59:30.374454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'adbd232a-a797-4c63-94ba-85cc861ae86a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f65e50>]}
+[0m04:59:30.426487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'adbd232a-a797-4c63-94ba-85cc861ae86a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11117ae50>]}
+[0m04:59:30.426752 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m04:59:30.426925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'adbd232a-a797-4c63-94ba-85cc861ae86a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffdad50>]}
+[0m04:59:30.427749 [info ] [MainThread]: 
+[0m04:59:30.429068 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:59:30.429778 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508'
+[0m04:59:30.429958 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:59:31.366685 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508_jaffle_shop'
+[0m04:59:31.367347 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:59:32.103098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'adbd232a-a797-4c63-94ba-85cc861ae86a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f76350>]}
+[0m04:59:32.104644 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m04:59:32.105195 [info ] [MainThread]: 
+[0m04:59:32.110522 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m04:59:32.110760 [info ] [Thread-1 (]: 1 of 1 START sql view model jaffle_shop.customers .............................. [RUN]
+[0m04:59:32.111202 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.jaffle_shop.customers'
+[0m04:59:32.111327 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m04:59:32.112561 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m04:59:32.113155 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (compile): 2023-03-14 04:59:32.111414 => 2023-03-14 04:59:32.113106
+[0m04:59:32.113306 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m04:59:32.134181 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m04:59:32.134635 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:59:32.135804 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+
+  create or replace view `main-duality-380508`.`jaffle_shop`.`customers`
+  OPTIONS()
+  as /models/customers.sql
+
+with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from sample_dbt.raw_customers
+),
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from sample_dbt.raw_orders
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final;
+
+
+[0m04:59:32.946797 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected "(" or keyword SELECT or keyword WITH but got "/" at [6:6]')
+[0m04:59:34.010930 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:8a982b5e-ddaa-475a-b05b-fc1f7319840d&page=queryresults
+[0m04:59:34.011904 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (execute): 2023-03-14 04:59:32.113389 => 2023-03-14 04:59:34.011782
+[0m04:59:34.025314 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  Syntax error: Expected "(" or keyword SELECT or keyword WITH but got "/" at [6:6]
+  compiled Code at target/run/jaffle_shop/models/customers.sql
+[0m04:59:34.025806 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adbd232a-a797-4c63-94ba-85cc861ae86a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111a5710>]}
+[0m04:59:34.026142 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model jaffle_shop.customers ..................... [[31mERROR[0m in 1.91s]
+[0m04:59:34.028170 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m04:59:34.031306 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m04:59:34.031962 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:59:34.032326 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m04:59:34.032764 [info ] [MainThread]: 
+[0m04:59:34.033383 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.60 seconds (3.60s).
+[0m04:59:34.033680 [debug] [MainThread]: Command end result
+[0m04:59:34.042566 [info ] [MainThread]: 
+[0m04:59:34.043283 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m04:59:34.043513 [info ] [MainThread]: 
+[0m04:59:34.043742 [error] [MainThread]: [33mDatabase Error in model customers (models/customers.sql)[0m
+[0m04:59:34.043942 [error] [MainThread]:   Syntax error: Expected "(" or keyword SELECT or keyword WITH but got "/" at [6:6]
+[0m04:59:34.044088 [error] [MainThread]:   compiled Code at target/run/jaffle_shop/models/customers.sql
+[0m04:59:34.044259 [info ] [MainThread]: 
+[0m04:59:34.044453 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m04:59:34.044871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11123a750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112a5ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111c98d0>]}
+[0m04:59:34.045109 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 05:01:04.211179 | 7b31d29f-ef05-4460-ae6e-79dd6dcc7e61 ==============================
+[0m05:01:04.211179 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:01:04.212358 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:01:04.212583 [debug] [MainThread]: Tracking: tracking
+[0m05:01:04.244959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a7efd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a4eb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a7ffd0>]}
+[0m05:01:04.255681 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:01:04.287166 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m05:01:04.287526 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models/customers.sql
+[0m05:01:04.349183 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+[0m05:01:04.360052 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m05:01:04.363258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b31d29f-ef05-4460-ae6e-79dd6dcc7e61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df6eb50>]}
+[0m05:01:04.368199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7b31d29f-ef05-4460-ae6e-79dd6dcc7e61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110acc150>]}
+[0m05:01:04.368405 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m05:01:04.368568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b31d29f-ef05-4460-ae6e-79dd6dcc7e61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e797e90>]}
+[0m05:01:04.369325 [info ] [MainThread]: 
+[0m05:01:04.370561 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:01:04.371241 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508'
+[0m05:01:04.371456 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:06.062908 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508_jaffle_shop'
+[0m05:01:06.064319 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:06.791156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b31d29f-ef05-4460-ae6e-79dd6dcc7e61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107b3a90>]}
+[0m05:01:06.792471 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:01:06.792766 [info ] [MainThread]: 
+[0m05:01:06.803977 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m05:01:06.804435 [info ] [Thread-1 (]: 1 of 1 START sql view model jaffle_shop.customers .............................. [RUN]
+[0m05:01:06.805018 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.jaffle_shop.customers'
+[0m05:01:06.805211 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m05:01:06.807341 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m05:01:06.807815 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (compile): 2023-03-14 05:01:06.805342 => 2023-03-14 05:01:06.807731
+[0m05:01:06.807999 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m05:01:06.837732 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m05:01:06.838534 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:01:06.840922 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+
+  create or replace view `main-duality-380508`.`jaffle_shop`.`customers`
+  OPTIONS()
+  as with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from
+        `main-duality-380508.jaffle_shop.raw_customers`
+),
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from
+        `main-duality-380508.jaffle_shop.raw_orders`
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final;
+
+
+[0m05:01:08.450119 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:2f909d38-1d73-4ce5-a030-2601b824de9a&page=queryresults
+[0m05:01:08.473783 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (execute): 2023-03-14 05:01:06.808099 => 2023-03-14 05:01:08.473324
+[0m05:01:08.474819 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b31d29f-ef05-4460-ae6e-79dd6dcc7e61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a7d550>]}
+[0m05:01:08.475682 [info ] [Thread-1 (]: 1 of 1 OK created sql view model jaffle_shop.customers ......................... [[32mCREATE VIEW (0 processed)[0m in 1.67s]
+[0m05:01:08.477198 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m05:01:08.478859 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:01:08.479241 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:01:08.479347 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m05:01:08.479428 [debug] [MainThread]: Connection 'list_main-duality-380508_jaffle_shop' was properly closed.
+[0m05:01:08.479589 [info ] [MainThread]: 
+[0m05:01:08.479808 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.11 seconds (4.11s).
+[0m05:01:08.480121 [debug] [MainThread]: Command end result
+[0m05:01:08.484752 [info ] [MainThread]: 
+[0m05:01:08.486431 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:01:08.487127 [info ] [MainThread]: 
+[0m05:01:08.487540 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m05:01:08.488293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107c63d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a36850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107e8590>]}
+[0m05:01:08.488491 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 05:02:05.587938 | 02de1277-0c59-40ce-a540-9bbdcefa8ec9 ==============================
+[0m05:02:05.587938 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:02:05.590211 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:02:05.593205 [debug] [MainThread]: Tracking: tracking
+[0m05:02:05.653786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e67d050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e425ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6a7810>]}
+[0m05:02:05.666877 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:02:05.679117 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m05:02:05.679427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '02de1277-0c59-40ce-a540-9bbdcefa8ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e68d810>]}
+[0m05:02:06.187965 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+[0m05:02:06.216511 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m05:02:06.220085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '02de1277-0c59-40ce-a540-9bbdcefa8ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4055d0>]}
+[0m05:02:06.228250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '02de1277-0c59-40ce-a540-9bbdcefa8ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e742850>]}
+[0m05:02:06.228564 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m05:02:06.228749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02de1277-0c59-40ce-a540-9bbdcefa8ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d54a790>]}
+[0m05:02:06.229861 [info ] [MainThread]: 
+[0m05:02:06.231257 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:02:06.231965 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508'
+[0m05:02:06.232157 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:02:07.014318 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508_jaffle_shop'
+[0m05:02:07.014979 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:02:07.744394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02de1277-0c59-40ce-a540-9bbdcefa8ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e793ed0>]}
+[0m05:02:07.745537 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:02:07.745811 [info ] [MainThread]: 
+[0m05:02:07.752413 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m05:02:07.752813 [info ] [Thread-1 (]: 1 of 1 START sql view model jaffle_shop.customers .............................. [RUN]
+[0m05:02:07.753352 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.jaffle_shop.customers'
+[0m05:02:07.753520 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m05:02:07.755267 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m05:02:07.755771 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (compile): 2023-03-14 05:02:07.753642 => 2023-03-14 05:02:07.755712
+[0m05:02:07.755907 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m05:02:07.778480 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m05:02:07.778970 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:02:07.783616 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+
+  create or replace view `main-duality-380508`.`jaffle_shop`.`customers`
+  OPTIONS()
+  as with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from
+        `main-duality-380508.jaffle_shop.raw_customers`
+),
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from
+        `main-duality-380508.jaffle_shop.raw_orders`
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final;
+
+
+[0m05:02:09.325344 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:ab69a7d2-b285-4b77-8a03-d01faacf7d34&page=queryresults
+[0m05:02:09.349408 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (execute): 2023-03-14 05:02:07.756001 => 2023-03-14 05:02:09.349327
+[0m05:02:09.350096 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02de1277-0c59-40ce-a540-9bbdcefa8ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d613750>]}
+[0m05:02:09.350825 [info ] [Thread-1 (]: 1 of 1 OK created sql view model jaffle_shop.customers ......................... [[32mCREATE VIEW (0 processed)[0m in 1.60s]
+[0m05:02:09.352225 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m05:02:09.353712 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:02:09.354085 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:02:09.354199 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m05:02:09.354340 [info ] [MainThread]: 
+[0m05:02:09.354519 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.12 seconds (3.12s).
+[0m05:02:09.354801 [debug] [MainThread]: Command end result
+[0m05:02:09.359393 [info ] [MainThread]: 
+[0m05:02:09.359632 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:02:09.359793 [info ] [MainThread]: 
+[0m05:02:09.359941 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m05:02:09.360198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e66f5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8f3dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e407650>]}
+[0m05:02:09.360352 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 05:03:10.388317 | 1845668e-a440-4d97-bbc0-d6f02ef776d8 ==============================
+[0m05:03:10.388317 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:03:10.389104 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:03:10.389389 [debug] [MainThread]: Tracking: tracking
+[0m05:03:10.416916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110e2cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcd1150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110dd4a10>]}
+[0m05:03:10.426783 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:03:10.468946 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:03:10.469296 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:03:10.470081 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_dbt_project
+[0m05:03:10.478898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1845668e-a440-4d97-bbc0-d6f02ef776d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110de48d0>]}
+[0m05:03:10.552250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1845668e-a440-4d97-bbc0-d6f02ef776d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11108ad90>]}
+[0m05:03:10.552535 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m05:03:10.552712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1845668e-a440-4d97-bbc0-d6f02ef776d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103aa2d0>]}
+[0m05:03:10.553580 [info ] [MainThread]: 
+[0m05:03:10.555025 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:03:10.555812 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508'
+[0m05:03:10.556009 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:03:11.857113 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508_jaffle_shop'
+[0m05:03:11.858781 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:03:12.653112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1845668e-a440-4d97-bbc0-d6f02ef776d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11024df50>]}
+[0m05:03:12.655830 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:03:12.656696 [info ] [MainThread]: 
+[0m05:03:12.667660 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m05:03:12.668031 [info ] [Thread-1 (]: 1 of 1 START sql view model jaffle_shop.customers .............................. [RUN]
+[0m05:03:12.668575 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.jaffle_shop.customers'
+[0m05:03:12.668718 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m05:03:12.670781 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m05:03:12.671261 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (compile): 2023-03-14 05:03:12.668855 => 2023-03-14 05:03:12.671186
+[0m05:03:12.671418 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m05:03:12.701310 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m05:03:12.701945 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:03:12.703799 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+
+  create or replace view `main-duality-380508`.`jaffle_shop`.`customers`
+  OPTIONS()
+  as with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from
+        `main-duality-380508.jaffle_shop.raw_customers`
+),
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from
+        `main-duality-380508.jaffle_shop.raw_orders`
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final;
+
+
+[0m05:03:14.254362 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:7b432c6b-214d-45fe-b0a1-6ac5d1e3030e&page=queryresults
+[0m05:03:14.286623 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (execute): 2023-03-14 05:03:12.671499 => 2023-03-14 05:03:14.286569
+[0m05:03:14.287324 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1845668e-a440-4d97-bbc0-d6f02ef776d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111307d0>]}
+[0m05:03:14.287905 [info ] [Thread-1 (]: 1 of 1 OK created sql view model jaffle_shop.customers ......................... [[32mCREATE VIEW (0 processed)[0m in 1.62s]
+[0m05:03:14.289295 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m05:03:14.290579 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:03:14.290936 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:03:14.291061 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m05:03:14.291198 [info ] [MainThread]: 
+[0m05:03:14.291401 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.74 seconds (3.74s).
+[0m05:03:14.291678 [debug] [MainThread]: Command end result
+[0m05:03:14.296206 [info ] [MainThread]: 
+[0m05:03:14.296462 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:03:14.296614 [info ] [MainThread]: 
+[0m05:03:14.296762 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m05:03:14.297103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e1b890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102ee8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e514d0>]}
+[0m05:03:14.297304 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 05:04:59.173822 | 230a846d-d6a0-4dc0-a24a-3551a7ecc1d4 ==============================
+[0m05:04:59.173822 [info ] [MainThread]: Running with dbt=1.4.5
+[0m05:04:59.174569 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/oji/dbt_training', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:04:59.174758 [debug] [MainThread]: Tracking: tracking
+[0m05:04:59.208990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110362c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100c4950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11033a310>]}
+[0m05:04:59.219318 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m05:04:59.230317 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m05:04:59.230637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '230a846d-d6a0-4dc0-a24a-3551a7ecc1d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104353d0>]}
+[0m05:04:59.758313 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+[0m05:04:59.790878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '230a846d-d6a0-4dc0-a24a-3551a7ecc1d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110350390>]}
+[0m05:04:59.796198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '230a846d-d6a0-4dc0-a24a-3551a7ecc1d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103a5a10>]}
+[0m05:04:59.796449 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 337 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m05:04:59.796623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '230a846d-d6a0-4dc0-a24a-3551a7ecc1d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e073e50>]}
+[0m05:04:59.797460 [info ] [MainThread]: 
+[0m05:04:59.798869 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:04:59.799628 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508'
+[0m05:04:59.799841 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:05:00.670247 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_main-duality-380508_jaffle_shop'
+[0m05:05:00.671682 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:05:01.398084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '230a846d-d6a0-4dc0-a24a-3551a7ecc1d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5cad90>]}
+[0m05:05:01.403784 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:05:01.404611 [info ] [MainThread]: 
+[0m05:05:01.426877 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m05:05:01.428015 [info ] [Thread-1 (]: 1 of 1 START sql table model jaffle_shop.customers ............................. [RUN]
+[0m05:05:01.431540 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.jaffle_shop.customers'
+[0m05:05:01.433339 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m05:05:01.443169 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m05:05:01.444613 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (compile): 2023-03-14 05:05:01.434416 => 2023-03-14 05:05:01.444382
+[0m05:05:01.446391 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m05:05:01.500418 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m05:05:01.501575 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:05:01.507548 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customers"} */
+
+  
+    
+
+    create or replace table `main-duality-380508`.`jaffle_shop`.`customers`
+    
+    
+    OPTIONS()
+    as (
+      with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from
+        `main-duality-380508.jaffle_shop.raw_customers`
+),
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from
+        `main-duality-380508.jaffle_shop.raw_orders`
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final
+    );
+  
+[0m05:05:05.160428 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=main-duality-380508&j=bq:US:77fc47ca-552a-4e49-85dc-89f485f7ea2e&page=queryresults
+[0m05:05:05.248436 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.customers (execute): 2023-03-14 05:05:01.446555 => 2023-03-14 05:05:05.247858
+[0m05:05:05.254585 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '230a846d-d6a0-4dc0-a24a-3551a7ecc1d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11039a2d0>]}
+[0m05:05:05.257027 [info ] [Thread-1 (]: 1 of 1 OK created sql table model jaffle_shop.customers ........................ [[32mCREATE TABLE (100.0 rows, 4.7 KB processed)[0m in 3.82s]
+[0m05:05:05.262470 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m05:05:05.270044 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:05:05.271808 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:05:05.272733 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m05:05:05.273619 [info ] [MainThread]: 
+[0m05:05:05.274834 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.48 seconds (5.48s).
+[0m05:05:05.276253 [debug] [MainThread]: Command end result
+[0m05:05:05.295527 [info ] [MainThread]: 
+[0m05:05:05.299633 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:05:05.300282 [info ] [MainThread]: 
+[0m05:05:05.300683 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m05:05:05.301577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110049f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11030d7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11030c550>]}
+[0m05:05:05.302249 [debug] [MainThread]: Flushing usage events

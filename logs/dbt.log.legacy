@@ -1,0 +1,10 @@
+2023-03-14 04:57:39.530114 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-03-14 04:58:45.919492 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-03-14 04:58:48.303973 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=11, family=30, type=1, proto=0, laddr=('2405:1203:c280:7500:24c1:479f:e407:e685', 59905, 0, 0), raddr=('2404:6800:4004:80b::200a', 443, 0, 0)>
+2023-03-14 04:58:48.304758 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=13, family=30, type=1, proto=0, laddr=('2405:1203:c280:7500:24c1:479f:e407:e685', 59907, 0, 0), raddr=('2404:6800:4004:80b::200a', 443, 0, 0)>
+2023-03-14 04:59:30.165018 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-03-14 05:01:04.091281 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-03-14 05:01:06.829143 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=11, family=30, type=1, proto=0, laddr=('2405:1203:c280:7500:24c1:479f:e407:e685', 59937, 0, 0), raddr=('2404:6800:4004:80b::200a', 443, 0, 0)>
+2023-03-14 05:02:05.383209 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-03-14 05:03:10.258357 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-03-14 05:04:59.045133 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13

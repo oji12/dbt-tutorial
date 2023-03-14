@@ -1,0 +1,13 @@
+jaffle_shop: # this needs to match the profile in your dbt_project.yml file
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /Users/oji/.dbt/dbt-user-creds.json
+      project: main-duality-380508
+      dataset: jaffle_shop
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
